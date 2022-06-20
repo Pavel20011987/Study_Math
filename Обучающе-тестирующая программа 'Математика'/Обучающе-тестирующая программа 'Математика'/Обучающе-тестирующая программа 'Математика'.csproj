@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03D99148-15E3-45EA-B30F-5F1648DD7F0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Обучающе_тестирующая_программа__Математика_</RootNamespace>
+    <AssemblyName>Обучающе-тестирующая программа %27Математика%27</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Core.XForms, Version=19.1451.0.63, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.Core.19.1.0.63\lib\netstandard2.0\Syncfusion.Core.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=19.1460.0.63, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.19.1.0.63\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.4.5.0.617\lib\netstandard2.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.4.5.0.617\lib\netstandard2.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.4.5.0.617\lib\netstandard2.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="Authorisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorisation.Designer.cs">
+      <DependentUpon>Authorisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Curriculum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curriculum.Designer.cs">
+      <DependentUpon>Curriculum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_theme_name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_theme_name.Designer.cs">
+      <DependentUpon>Change_theme_name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_theme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_theme.Designer.cs">
+      <DependentUpon>Add_theme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_rule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_rule.Designer.cs">
+      <DependentUpon>Add_rule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grades.Designer.cs">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MathDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Teacher_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_data.Designer.cs">
+      <DependentUpon>Teacher_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_data.Designer.cs">
+      <DependentUpon>Student_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_rule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_rule.Designer.cs">
+      <DependentUpon>Show_rule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MathDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Student_grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_grades.Designer.cs">
+      <DependentUpon>Student_grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_curriculum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_curriculum.Designer.cs">
+      <DependentUpon>Student_curriculum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students.Designer.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test_creating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test_creating.Designer.cs">
+      <DependentUpon>Test_creating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkWithBD.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add_rule.resx">
+      <DependentUpon>Add_rule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_theme.resx">
+      <DependentUpon>Add_theme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authorisation.resx">
+      <DependentUpon>Authorisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Curriculum.resx">
+      <DependentUpon>Curriculum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_theme_name.resx">
+      <DependentUpon>Change_theme_name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades.resx">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.rdlc" />
+    <EmbeddedResource Include="Student_data.resx">
+      <DependentUpon>Student_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_rule.resx">
+      <DependentUpon>Show_rule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_curriculum.resx">
+      <DependentUpon>Student_curriculum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_grades.resx">
+      <DependentUpon>Student_grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_data.resx">
+      <DependentUpon>Teacher_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test_creating.resx">
+      <DependentUpon>Test_creating.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MathDBDataSet.xsc">
+      <DependentUpon>MathDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MathDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MathDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MathDBDataSet.xss">
+      <DependentUpon>MathDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MathDBDataSet2.xsc">
+      <DependentUpon>MathDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MathDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MathDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MathDBDataSet2.xss">
+      <DependentUpon>MathDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets')" />
+</Project>

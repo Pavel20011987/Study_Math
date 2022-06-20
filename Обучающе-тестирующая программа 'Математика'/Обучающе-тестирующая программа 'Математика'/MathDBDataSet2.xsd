@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MathDBDataSet2" targetNamespace="http://tempuri.org/MathDBDataSet2.xsd" xmlns:mstns="http://tempuri.org/MathDBDataSet2.xsd" xmlns="http://tempuri.org/MathDBDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MathDBConnectionStringStudentGrades" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MathDBConnectionStringStudentGrades (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Обучающе_тестирующая_программа__Математика_.Properties.Settings.GlobalReference.Default.MathDBConnectionStringStudentGrades" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_GradesTableAdapter" GeneratorDataComponentClassName="View_GradesTableAdapter" Name="View_Grades" UserDataComponentName="View_GradesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MathDBConnectionStringStudentGrades (Settings)" DbObjectName="MathDB.dbo.View_Grades" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT theme_name, test_name, grade, student_name, group_name FROM dbo.View_Grades</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="theme_name" DataSetColumn="theme_name" />
+              <Mapping SourceColumn="test_name" DataSetColumn="test_name" />
+              <Mapping SourceColumn="grade" DataSetColumn="grade" />
+              <Mapping SourceColumn="student_name" DataSetColumn="student_name" />
+              <Mapping SourceColumn="group_name" DataSetColumn="group_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MathDBDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MathDBDataSet2" msprop:Generator_UserDSName="MathDBDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Grades" msprop:Generator_TableClassName="View_GradesDataTable" msprop:Generator_TableVarName="tableView_Grades" msprop:Generator_TablePropName="View_Grades" msprop:Generator_RowDeletingName="View_GradesRowDeleting" msprop:Generator_RowChangingName="View_GradesRowChanging" msprop:Generator_RowEvHandlerName="View_GradesRowChangeEventHandler" msprop:Generator_RowDeletedName="View_GradesRowDeleted" msprop:Generator_UserTableName="View_Grades" msprop:Generator_RowChangedName="View_GradesRowChanged" msprop:Generator_RowEvArgName="View_GradesRowChangeEvent" msprop:Generator_RowClassName="View_GradesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="theme_name" msprop:Generator_ColumnVarNameInTable="columntheme_name" msprop:Generator_ColumnPropNameInRow="theme_name" msprop:Generator_ColumnPropNameInTable="theme_nameColumn" msprop:Generator_UserColumnName="theme_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="test_name" msprop:Generator_ColumnVarNameInTable="columntest_name" msprop:Generator_ColumnPropNameInRow="test_name" msprop:Generator_ColumnPropNameInTable="test_nameColumn" msprop:Generator_UserColumnName="test_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="grade" msprop:Generator_ColumnVarNameInTable="columngrade" msprop:Generator_ColumnPropNameInRow="grade" msprop:Generator_ColumnPropNameInTable="gradeColumn" msprop:Generator_UserColumnName="grade" type="xs:int" />
+              <xs:element name="student_name" msprop:Generator_ColumnVarNameInTable="columnstudent_name" msprop:Generator_ColumnPropNameInRow="student_name" msprop:Generator_ColumnPropNameInTable="student_nameColumn" msprop:Generator_UserColumnName="student_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="group_name" msprop:Generator_ColumnVarNameInTable="columngroup_name" msprop:Generator_ColumnPropNameInRow="group_name" msprop:Generator_ColumnPropNameInTable="group_nameColumn" msprop:Generator_UserColumnName="group_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
